@@ -21,7 +21,7 @@ preview_id = "REPLACE_WITH_YOUR_KV_ID"
 [vars]
 # 302 to the Quark CDN. "proxy" would stream every byte through the edge and
 # risks being cut off mid-playback — see the note in src/webdav.mjs.
-DAV_MODE = "redirect"
+DAV_MODE = "proxy"
 # Free plan gives ~10ms CPU per request. Web Crypto PBKDF2 at 120k iterations
 # would blow that; 20k still costs an attacker plenty and fits the budget.
 PBKDF2_ITERATIONS = "20000"
